@@ -42,6 +42,7 @@
     "esbenp.prettier-vscode",
     "njpwerner.autodocstring",
     "eamodio.gitlens",
-    "ms-pyright.pyright"
+    "ms-pyright.pyright",
+    "goessner.mdmath"
   ]
 }
