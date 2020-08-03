@@ -1,0 +1,14 @@
+version: "3"
+services:
+  deep-learning-from-scratch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        WORKDIR: /project
+    volumes:
+      - ..:/project
+      - ${USERPROFILE-~}/.ssh:/home/vscode/.ssh
+    image: deep-learning-from-scratch-image
+    container_name: deep-learning-from-scratch-container
+    tty: true
