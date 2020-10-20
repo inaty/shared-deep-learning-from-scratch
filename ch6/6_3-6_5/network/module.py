@@ -32,7 +32,7 @@ class SequenceNet:
         return (
             self.loss.forward(self.predict(x), t)
             + self.l1 * self.sum_weights_abs
-            + self.l2 * self.sum_weights_pow2 / 2.0
+            + self.l2 * self.sum_weights_pow2 / 2.
         )
 
     def calculate_accuracy(self, x, t):
